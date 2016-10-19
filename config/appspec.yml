@@ -1,7 +1,7 @@
 version: 0.0
 os: linux
 files:
-  - source: /index.html
+  - source: testuploader/app/views/photos/index.html.erb
     destination: /var/www/html/
 hooks:
     BeforeInstall:
