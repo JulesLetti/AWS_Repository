@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 
 
-gem "capistrano", "~> 3.4"
+gem 'capistrano-ext'
 gem 'capistrano-rails'
 gem 'capistrano-bundler'
 gem 'capistrano-rbenv'
