@@ -16,7 +16,7 @@ class PhotosController < ApplicationController
       @photo = Photo.new(photo_params)
 
       if @photo.save
-        flash[:success] = "The video will be send to you shortly!"
+        flash[:notice] = "Your new video will be emailed to you shortly!"
         redirect_to root_path
       else
         render 'new'
