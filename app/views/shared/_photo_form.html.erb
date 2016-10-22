@@ -19,7 +19,7 @@ body {
 </style>
 
 <div class="row">
-  <div class="col-md-4 col-md-offset-4">
+  <div class="col-md-6 col-md-offset-3">
     <div class="panel panel-default">
       <div class="panel-heading">
         <h2 class="panel-title">Upload</h2>
@@ -30,7 +30,7 @@ body {
           <br>
           <%= f.label :style, label: 'Choose your style'  %><br>
 
-          <%= f.collection_radio_buttons(:title, [['Modern Art', 'Modern Art'], ['Munch', 'Munch'], ['Picasso', 'Picasso'], ['Black and White', 'Black and White']], :first, :last, :item_wrapper_class => 'radio-inline',) { |title| title.label { title.radio_button + " " + image_tag("#{title.text}.jpg", :size => "60x50")}} %>
+          <%= f.collection_radio_buttons(:title, [['Modern Art', 'Modern Art'], ['Munch', 'Munch'], ['Picasso', 'Picasso'], ['Black and White', 'Black and White']], :first, :last, :item_wrapper_class => 'radio-inline',) { |title| title.label { title.radio_button + " " + image_tag("#{title.text}.jpg", :size => "120x120")}} %>
           <br>
           <br>
           <%= f.input :image, label: 'Upload your video' %>
